@@ -41,12 +41,12 @@ function displaytodoitems(){
 
     newhtml=newhtml+`
 
-    <div>
+    
         <span>${todolist[i].item}</span>
         <span>${todolist[i].duedate}</span>
-        <button onclick="todolist.splice(${i},1); displaytodoitems();">Delete</button>
+        <button class="todo-delete" onclick="todolist.splice(${i},1); displaytodoitems();">Delete</button>
     
-    </div> 
+   
        `;
       
      
